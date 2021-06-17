@@ -21,5 +21,7 @@ module Samazon
     # the framework and any gems in your application.
     # バリデーションエラーが発生したときに'field_with_errors'というclassを付加しない
     config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag }
+    
+    config.assets.initialize_on_precompile = false
   end
 end
