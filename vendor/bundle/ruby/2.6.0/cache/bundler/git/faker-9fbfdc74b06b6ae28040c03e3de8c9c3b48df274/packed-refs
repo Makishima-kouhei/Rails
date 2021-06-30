@@ -5,10 +5,10 @@ f26057ceae817dae931e8b2af53262a1ece1d2b0 refs/heads/bump-version-to-2-14-0
 4a3c41ae890c29aef53395cdd33534ae0531b4eb refs/heads/circleci
 a507f3f6090fe12ee8b3bdf7aab3d6e03199c59b refs/heads/connorshea-patch-1
 e650e6f4bee23ce72abefd3a82add72126c074fa refs/heads/control-typo-fix
-665c3be6b31c7491fb1efdef4fcef3810e74ea84 refs/heads/dependabot/bundler/rubocop-1.17.0
-b195320d0bbb35eb0e57160b110dbd1e74fd9257 refs/heads/dependabot/bundler/simplecov-0.21.1
+8257abfd9f27e09cc5d82f7f8c08ea0bb9428e21 refs/heads/dependabot/bundler/rubocop-1.18.0
+978fdbaafb0ddd689939fb3e4736b1207a8a2ba1 refs/heads/dependabot/bundler/simplecov-0.21.1
 fa2aeb37bebf0ab74afe480d8b675da8ce5fce70 refs/heads/jruby
-8e8ae220eadaa0c036999b7711106b1a84c372d9 refs/heads/master
+cbe601751c01568c73b25a9e159d27a4679db591 refs/heads/master
 042e4b6bf9f0cd6bc601faf1bef0f823dbcb2fde refs/heads/revert-2172-dependabot/bundler/rubocop-eq-1.0.0
 60720a83aca3f4cbd13eab90ec67d6e42265b160 refs/heads/rollback-2169-and-bump-to-2-15-1
 b913e7cba609b42c74f7968840270c74a1cbbd0b refs/tags/1.9.4

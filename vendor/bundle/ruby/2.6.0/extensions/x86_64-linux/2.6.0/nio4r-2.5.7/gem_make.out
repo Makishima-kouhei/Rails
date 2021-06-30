@@ -1,5 +1,5 @@
 current directory: /home/ec2-user/environment/samazon/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
-/home/ec2-user/.rvm/rubies/ruby-2.6.5/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210617-13541-1m5m1au.rb extconf.rb
+/home/ec2-user/.rvm/rubies/ruby-2.6.5/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210630-9898-18tggzy.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... yes
 checking for linux/io_uring.h... no
@@ -68,4 +68,4 @@ linking shared-object nio4r_ext.so
 
 current directory: /home/ec2-user/environment/samazon/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20210617-13541-lvin7d
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20210630-9898-gz8xrt
