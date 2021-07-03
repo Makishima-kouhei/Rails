@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     get "dashboard/logout", :to => "admins/sessions#destroy"
   end
   
+  
+  
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
     :sessions => 'users/sessions',
