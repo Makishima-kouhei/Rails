@@ -11,7 +11,11 @@ Rails.application.routes.draw do
     get "dashboard/logout", :to => "admins/sessions#destroy"
   end
   
-  
+  namespace :dashboard do
+    resources :major_categories, except: [:new]
+    resources :categories, except: [:new]
+    resources :products, except: [:show]
+  end
   
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
