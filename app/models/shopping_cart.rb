@@ -8,6 +8,8 @@ class ShoppingCart < ApplicationRecord
     scope :sort_list, -> {
         {"日別": "daily", "月別": "month"}
     }
+    CARRIAGE=800
+    FREE_SHIPPING=0
 
     def self.get_monthly_billings
         buy_ids = bought_cart_ids
@@ -60,5 +62,18 @@ class ShoppingCart < ApplicationRecord
     
     def tax_pct
         0
+    end
+    
+    def shipping_cost(cost_flag = {})
+        cost_flag.present? ? Money.new(CARRIAGE * 100)
+                           : Money.new(FREE_SHIPPING)
+    end
+    
+    def shipping_cost_check(user)
+        cart_id = ShoppingCart.set_user_cart(user)
+        product_ids = ShoppingCartItem.keep_item_ids(cart_id)
+        check_products_carriage_list = Product.check_products_carriage_list(product_ids)
+        check_products_carriage_list.include?("true") ? shipping_cost({cost_flag: true})
+                                                      : shipping_cost
     end
 end
