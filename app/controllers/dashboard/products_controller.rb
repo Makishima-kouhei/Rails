@@ -29,7 +29,7 @@ class Dashboard::ProductsController < ApplicationController
 
   def new
     @categories = Category.all
-    @product = Product.newa
+    @product = Product.new
   end
 
   def create
