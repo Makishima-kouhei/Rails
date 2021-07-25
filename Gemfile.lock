@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/faker-ruby/faker.git
-  revision: cbe601751c01568c73b25a9e159d27a4679db591
+  revision: 5169f7b03761b927ffa2bea39cd14b55c6bb0ca5
   branch: master
   specs:
     faker (2.18.0)
@@ -41,6 +41,8 @@ GEM
       activemodel (= 5.2.6)
       activesupport (= 5.2.6)
       arel (>= 9.0)
+    activerecord-import (1.2.0)
+      activerecord (>= 3.2)
     activestorage (5.2.6)
       actionpack (= 5.2.6)
       activerecord (= 5.2.6)
@@ -53,7 +55,7 @@ GEM
     acts_as_shopping_cart (0.4.1)
       money-rails (~> 1.5)
       rails (> 4)
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
@@ -106,6 +108,8 @@ GEM
     ffi (1.15.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    groupdate (5.2.2)
+      activesupport (>= 5)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     io-like (0.3.1)
@@ -186,7 +190,7 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
-    rake (13.0.3)
+    rake (13.0.6)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -195,7 +199,7 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     ruby_dep (1.5.0)
-    rubyzip (2.3.0)
+    rubyzip (2.3.2)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -259,6 +263,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord-import
   acts_as_shopping_cart
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.6.0)
@@ -269,6 +274,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   faker!
+  groupdate
   jbuilder (~> 2.5)
   jquery-rails
   kaminari
@@ -291,4 +297,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   2.2.21
+   2.2.24

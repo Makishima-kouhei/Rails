@@ -4,7 +4,7 @@ class Dashboard::ProductsController < ApplicationController
   layout "dashboard/dashboard"
 
   def index
-    sort_query = []
+    sort_query = {}
     @sorted = ""
 
     if params[:sort].present?
@@ -13,8 +13,8 @@ class Dashboard::ProductsController < ApplicationController
       @sorted = params[:sort]
     end
 
-    if params[:keyword] != nil
-      keyword = trim(params[:keyword])
+    if params[:keyword].present?
+      keyword = params[:keyword].strip
       @total_count = Product.search_for_id_and_name(keyword).count
       @products = Product.search_for_id_and_name(keyword).sort_order(sort_query).display_list(params[:pages])
     else
@@ -35,7 +35,7 @@ class Dashboard::ProductsController < ApplicationController
   def create
     product = Product.new(product_params)
     product.save
-    redirect_to _pathdashboard_products
+    redirect_to dashboard_products_path
   end
 
   def edit
