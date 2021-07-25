@@ -55,6 +55,12 @@
 
   # ショッピングカートを実装できる。
   gem 'acts_as_shopping_cart'
+  
+  # 日別、週別、月別、年別にレコードを集計できる
+  gem 'groupdate'
+  
+  # 複数のレコードを一括で登録、更新できる
+  gem 'activerecord-import'
 
   group :development, :test do
     # Call 'byebug' anywhere in the code to stop execution and get a debugger console
